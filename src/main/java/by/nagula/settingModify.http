@@ -1,0 +1,45 @@
+GET localhost:8080/home/all
+
+###
+
+POST localhost:8080/home/save
+Content-Type: application/json
+
+{
+  "city": "Москва",
+  "description": "Не забудьте посетить Красную Площадь. Ну а в ЦУМ можно и не заходить)))"
+}
+
+###
+
+POST localhost:8080/home/save
+Content-Type: application/json
+
+{
+  "city": "Минск",
+  "description": "В Минск лучше ехать летом"
+}
+
+###
+
+GET localhost:8080/home/get/Минск
+
+###
+
+GET localhost:8080/home/get/Гродно
+
+###
+
+GET localhost:8080/home/delete/2
+
+###
+
+POST localhost:8080/home/edit
+Content-Type: application/json
+
+{
+  "city": "Минск",
+  "description": "В Минск можно погулять по паркам"
+}
+
+###
